@@ -1,8 +1,6 @@
-.selectRow {
+.wishdd-select2 {
+    width : 300px;
     display : block;
     padding : 20px;
 }
 
-.select2-container {
-    width: 200px;
-}

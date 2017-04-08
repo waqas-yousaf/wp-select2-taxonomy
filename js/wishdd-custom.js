@@ -1,8 +1,19 @@
+/**
+* Wishdd Select2 Posts Dropdown with Shortcodes 1.0
+* Author  - Waqas Yousaf / Tehmina Aslam
+* Website -  http://wishdd.com/
+* Contact - waqas@wishdd.com
+* License: GPLv2
+*/
+
 jQuery(document).ready(function( $ )
 {
-	$('#talkshow').select2(
+	var sTitle 		 = wishdd_localize.title;
+	var sPlaceHolder = wishdd_localize.placeholder;
+
+	$('#'+sTitle ).select2(
 	{
-    	placeholder: "Talk Shows"
+    	placeholder: sPlaceHolder
 	}
 		).on('select2:select', function()
 		{

@@ -1,6 +1,12 @@
 <?php
 
-
+/**
+* Wishdd Select2 Posts Dropdown with Shortcodes 1.0
+* Author  - Waqas Yousaf / Tehmina Aslam
+* Website -  http://wishdd.com/
+* Contact - waqas@wishdd.com
+* License: GPLv2
+*/
 
 // --- Create Taxonomy Function
 function wishdd_taxonomy_talkshow()

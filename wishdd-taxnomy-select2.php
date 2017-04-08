@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Wishdd Select2 Posts Dropdown
-Description: Wishdd Select2 Posts Dropdown with Shortcodes
+Description: A wordpress plugin to show custom taxonomy terms list with select2 dropdown.
 Version: 1.0
 Author: Waqas Yousaf / Tehmina Aslam
 Author URI: http://wishdd.com/

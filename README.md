@@ -1,4 +1,4 @@
-# wordpress-taxonomy-select2
+# wishdd-taxonomy-select2
 A wordpress plugin to show custom taxonomy terms list with select2 dropdown.
 
 # Short Code

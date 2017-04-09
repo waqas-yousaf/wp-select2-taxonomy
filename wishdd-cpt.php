@@ -9,7 +9,7 @@
 */
 
 // --- Create Taxonomy Function
-function wishdd_taxonomy_talkshow()
+function wishdd_register_taxonomy()
 {
 	$taxonomies = [ ["singular" => "Talk show", "plural" => "Talk shows" , "name" => "Talkshow"],
 					  ["singular" => "Profile", "plural"=> "Profiles", "name" => "Profile"]
@@ -60,5 +60,5 @@ function wishdd_taxonomy_talkshow()
 
 
 // --- Register Taxonomy Function
-add_action('init', 'wishdd_taxonomy_talkshow');
+add_action('init', 'wishdd_register_taxonomy');
 

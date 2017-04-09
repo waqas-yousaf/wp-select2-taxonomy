@@ -8,22 +8,30 @@
 
 jQuery(document).ready(function( $ )
 {
-	var sTitle 		 = wishdd_localize.title;
-	var sPlaceHolder = wishdd_localize.placeholder;
+	var options 	 = (typeof wishdd_localize !== 'undefined') ? wishdd_localize : null;
+	var sTitle 		 = jQuery.parseJSON(options.title);
+	var sPlaceHolder = jQuery.parseJSON(options.placeholder);
+	
 
-	$('#'+sTitle ).select2(
-	{
-    	placeholder: sPlaceHolder
-	}
-		).on('select2:select', function()
-		{
-			var url = $(this).val();
-    		window.location.href = url;
-    
-		});
+ 	if (options && sTitle.length > 0)
+ 	{
+ 	
+ 		for (var i = 0; i < sTitle.length; i++)
+ 		{
+ 			
+ 			$('#'+sTitle[i] ).select2(
+ 			{
+ 				placeholder: sPlaceHolder[i]
+ 			}).on('select2:select', function()
+ 			{
+ 				var url = $(this).val();
+ 				window.location.href = url;
+
+			});
 
 
-
+        }
+    }
 });
 
 
